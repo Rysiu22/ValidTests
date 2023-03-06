@@ -1,0 +1,16 @@
+plain address	Missing @ sign and domain
+#@%^%#$@#$@#.com	Garbage
+@domain.com	Missing username
+Joe Smith <email@domain.com>	Encoded HTML within an email is invalid
+email.domain.com	Missing @
+email@domain@domain.com	Two @ sign
+.email@domain.com	The leading dot in the address is not allowed
+email.@domain.com	Trailing dot in address is not allowed
+email..email@domain.com	Multiple dots
+あいうえお@domain.com	Unicode char as address
+email@domain.com (Joe Smith)	Text followed email is not allowed
+email@domain	Missing top-level domain (.com/.net/.org/etc.)
+email@-domain.com	The leading dash in front of the domain is invalid
+email@domain.web	.web is not a valid top-level domain
+email@111.222.333.44444	Invalid IP format
+email@domain..com	Multiple dots in the domain portion is invalid
